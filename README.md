@@ -1,10 +1,38 @@
-# Agent Operator Handbook
+# Build with Codex: A Plain-English Handbook
+
+This guide is for writers, creators, researchers, small-business owners, and
+anyone else with an idea who wants to build with Codex without first becoming
+a software engineer.
+
+Use it to turn an idea into a clear project, let Codex handle the approved
+technical work, and verify the finished result without reading every line of
+code. The same approach also works with Claude and similar file-and-tool
+agents.
+
+You remain responsible for the destination and the important decisions. The
+agent is responsible for doing the work inside those boundaries and leaving a
+result you can review.
+
+## Start in 60 Seconds
+
+Open Codex in the folder that contains your project material and paste:
+
+```text
+I do not code, but I have a project idea. Read the material in this project and
+explain what already exists in plain language. Then draft an Agent Project Card
+covering the finished result, reliable source material, what must stay
+protected, actions that require my approval, and any decisions or missing
+information you need from me. Do not change anything yet.
+```
+
+Codex should return a short current-state explanation, a draft Project Card,
+and only the questions that genuinely require your judgment. Review those
+decisions before authorizing any changes.
+
+## The Basic Routine
 
 Most agent guides explain how to ask for work. This guide explains how to let
 an agent do most of that work without losing control of the project.
-
-It is for people using Codex, Claude, or similar file-and-tool agents on real
-projects without needing to read code or understand every technical step.
 
 Think of the agent as a capable worker. You do not need to manage every step or
 choose every technical check. You give it a destination, show it where the
@@ -28,11 +56,7 @@ The basic routine is:
    changed, what it checked, what remains uncertain, and what should happen
    next.
 
-You remain responsible for the destination and the important decisions. The
-agent is responsible for doing the work inside those boundaries and leaving a
-result you can review.
-
-## Start Here
+## Start with a Project Card
 
 1. Give the agent the [Agent Project Card](templates/AGENT_PROJECT_CARD.md) and
    ask it to draft the card from the project information it can find.
