@@ -75,6 +75,23 @@ what it can, then bring you the gaps and decisions that genuinely need a human.
 See the filled examples for a [writing revision](examples/writing-revision.md)
 and a [preserve-first inbox cleanup](examples/inbox-cleanup.md).
 
+## Build a Recurring-Work Assistant
+
+Once one project is working well, you may want Codex to help with a recurring
+body of work: weekly research, programme coordination, content planning, or
+another job that needs continuity across sessions.
+
+Start with [Build a Working Assistant with Codex](guides/BUILD_A_RECURRING_WORK_SYSTEM.md).
+It distils 27 lessons from a long-running private Chief-of-Staff build into a
+small operating pattern: trusted sources, durable state outside chat, bounded
+authority, useful feedback, low-noise attention, and evidence of completion.
+
+Use the [copyable recurring-work workspace](templates/recurring-workspace/README.md)
+to prove one workflow before adding databases, broad connector access,
+background automation, or a custom application. The
+[weekly community brief](examples/weekly-community-brief.md) shows the pattern
+with entirely synthetic information.
+
 ## How Much Can the Agent Do?
 
 Give the agent more freedom one step at a time. Treat each step as a separate
