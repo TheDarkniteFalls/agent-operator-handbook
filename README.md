@@ -1,5 +1,7 @@
 # Build with Codex: A Plain-English Handbook
 
+[![checks](https://github.com/TheDarkniteFalls/agent-operator-handbook/actions/workflows/checks.yml/badge.svg)](https://github.com/TheDarkniteFalls/agent-operator-handbook/actions/workflows/checks.yml)
+
 This guide is for writers, creators, researchers, small-business owners, and
 anyone else with an idea who wants to build with Codex without first becoming
 a software engineer.
@@ -92,6 +94,21 @@ background automation, or a custom application. The
 [weekly community brief](examples/weekly-community-brief.md) shows the pattern
 with entirely synthetic information.
 
+### Download The Starter
+
+[Download the minimum recurring-work workspace](downloads/minimum-recurring-workspace.zip?raw=1),
+extract the single folder, open it in Codex, and paste the setup prompt from its
+`README.md`. The download contains only the seven declared starter files and
+folders. Its published [SHA-256 checksum](downloads/minimum-recurring-workspace.sha256)
+and automated clean-folder check are rebuilt from the same source templates.
+
+The check proves that the committed download matches those templates, extracts
+cleanly into one folder, contains the required agreement and handoff surfaces,
+and avoids the repository's known private-data markers. It does **not** run
+Codex, inspect your sources, enforce authority, or prove that the starter will
+improve every workflow. The real first-use proof is one bounded task completed
+in a fresh session.
+
 ## How Much Can the Agent Do?
 
 Give the agent more freedom one step at a time. Treat each step as a separate
@@ -165,6 +182,36 @@ This loop needs a short handoff, not a larger tracking system or more raw logs.
 The agent records the lesson, its evidence, where it was saved, and how to
 check it next time. The project improves only when a later result shows that
 the lesson was useful.
+
+## Help Test The First Use
+
+The next useful evidence is outside use, not another feature. Follow the
+[30-to-60-minute first-use trial](docs/FIRST_USE_TRIAL.md), then use the
+repository's **First-use report** issue form to share only generalized,
+redacted, or synthetic feedback. Three completed reports are enough to choose
+the next small correction; they are not a representative study.
+
+Never put private sources, identifying details, credentials, internal links,
+connector exports, raw model logs, customer data, or unpublished material in a
+public issue.
+
+## Repository Checks
+
+```sh
+python3 scripts/build_starter_bundle.py --check
+python3 scripts/check_starter_bundle.py
+python3 -m py_compile scripts/build_starter_bundle.py scripts/check_starter_bundle.py
+```
+
+Expected result:
+
+```text
+PASS deterministic_starter_bundle
+PASS starter_source
+PASS starter_archive
+PASS clean_folder_shape
+PASS public_safe_starter
+```
 
 ## Scope
 
