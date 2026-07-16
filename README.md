@@ -2,6 +2,18 @@
 
 [![checks](https://github.com/TheDarkniteFalls/agent-operator-handbook/actions/workflows/checks.yml/badge.svg)](https://github.com/TheDarkniteFalls/agent-operator-handbook/actions/workflows/checks.yml)
 
+<!-- toolkit-trust-card:start -->
+> **Public contract:** Stable guide · about 5 min · No code; Python optional · no model · no network
+>
+> **Operation:** Guidance only
+>
+> **A pass establishes:** The starter bundle contains the declared source, authority, review, and handoff files and passes its structural checks.
+>
+> **It does not establish:** Guidance and templates do not enforce permissions or verify a live project.
+>
+> **First check:** `python3 scripts/check_starter_bundle.py`
+<!-- toolkit-trust-card:end -->
+
 This guide is for writers, creators, researchers, small-business owners, and
 anyone else with an idea who wants to build with Codex without first becoming
 a software engineer.
@@ -96,11 +108,16 @@ with entirely synthetic information.
 
 ### Download The Starter
 
-[Download the minimum recurring-work workspace](downloads/minimum-recurring-workspace.zip?raw=1),
-extract the single folder, open it in Codex, and paste the setup prompt from its
-`README.md`. The download contains only the seven declared starter files and
-folders. Its published [SHA-256 checksum](downloads/minimum-recurring-workspace.sha256)
-and automated clean-folder check are rebuilt from the same source templates.
+[Create a private Reliable AI Work Starter](https://github.com/new?template_owner=TheDarkniteFalls&template_name=reliable-ai-work-starter&visibility=private),
+open the new repository in Codex, and paste the setup prompt from its
+`README.md`. The copy is private by default and includes the working agreement,
+source shelf, current-state handoff, review log, output boundary, and a small
+structural check.
+
+If you prefer an offline folder, [download the minimum recurring-work
+workspace](downloads/minimum-recurring-workspace.zip?raw=1) instead. Its
+published [SHA-256 checksum](downloads/minimum-recurring-workspace.sha256) and
+automated clean-folder check are rebuilt from the same source templates.
 
 The check proves that the committed download matches those templates, extracts
 cleanly into one folder, contains the required agreement and handoff surfaces,
@@ -186,10 +203,12 @@ the lesson was useful.
 ## Help Test The First Use
 
 The next useful evidence is outside use, not another feature. Follow the
-[30-to-60-minute first-use trial](docs/FIRST_USE_TRIAL.md), then use the
-repository's **First-use report** issue form to share only generalized,
-redacted, or synthetic feedback. Three completed reports are enough to choose
-the next small correction; they are not a representative study.
+[30-to-60-minute first-use trial](docs/FIRST_USE_TRIAL.md), then submit a
+[public-safe first-use report](https://github.com/TheDarkniteFalls/reliable-ai-work-starter/issues/new?template=first-use-report.yml).
+Accepted reports are summarized in the starter's
+[usage-evidence ledger](https://github.com/TheDarkniteFalls/reliable-ai-work-starter/blob/main/USAGE_EVIDENCE.md).
+Three completed reports are enough to choose the next small correction; they
+are not a representative study.
 
 Never put private sources, identifying details, credentials, internal links,
 connector exports, raw model logs, customer data, or unpublished material in a
