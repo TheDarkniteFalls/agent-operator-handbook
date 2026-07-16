@@ -25,9 +25,11 @@ work in ordinary language but do not want to become software engineers first.
 
 ## Run The Trial
 
-1. [Download the starter workspace](../downloads/minimum-recurring-workspace.zip?raw=1)
-   and extract the single folder.
-2. Open that folder as a fresh Codex project or session.
+1. [Create a private starter repository](https://github.com/new?template_owner=TheDarkniteFalls&template_name=reliable-ai-work-starter&visibility=private).
+   If you prefer a local folder, [download the offline
+   workspace](../downloads/minimum-recurring-workspace.zip?raw=1) instead.
+2. Open the new repository or extracted folder as a fresh Codex project or
+   session.
 3. Paste the setup prompt from the starter `README.md`.
 4. Answer no more than the three requested questions.
 5. Run one bounded workflow through to a saved output.
@@ -37,8 +39,9 @@ work in ordinary language but do not want to become software engineers first.
 
 ## What To Report
 
-Use the repository's **First-use report** issue form and share only public-safe
-information:
+Use the starter's [First-use report issue
+form](https://github.com/TheDarkniteFalls/reliable-ai-work-starter/issues/new?template=first-use-report.yml)
+and share only public-safe information:
 
 - the general kind of work attempted;
 - whether the first useful result was completed;
