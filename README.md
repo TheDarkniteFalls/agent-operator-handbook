@@ -27,6 +27,10 @@ You remain responsible for the destination and the important decisions. The
 agent is responsible for doing the work inside those boundaries and leaving a
 result you can review.
 
+To follow the runnable steps, you need Codex or a similar file-and-tool agent
+and a local project folder it may read. If you only want to learn the method,
+continue without running the prompts.
+
 ## Start in 60 Seconds
 
 Open Codex in the folder that contains your project material and paste:
