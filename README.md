@@ -1,31 +1,19 @@
 # Build with Codex: A Plain-English Handbook
 
-[![checks](https://github.com/TheDarkniteFalls/agent-operator-handbook/actions/workflows/checks.yml/badge.svg)](https://github.com/TheDarkniteFalls/agent-operator-handbook/actions/workflows/checks.yml)
+Codex can help turn project material and ordinary-language instructions into
+finished work even if you do not code. The harder part is telling it which
+material to trust, what result you want, what it may change, and what evidence
+must come back before you accept the work.
 
-<!-- toolkit-trust-card:start -->
-> **Public contract:** Stable guide · about 5 min · No code; Python optional · no model · no network
->
-> **Operation:** Guidance only
->
-> **A pass establishes:** The starter bundle contains the declared source, authority, review, and handoff files and passes its structural checks.
->
-> **It does not establish:** Guidance and templates do not enforce permissions or verify a live project.
->
-> **First check:** `python3 scripts/check_starter_bundle.py`
-<!-- toolkit-trust-card:end -->
+This handbook is for writers, creators, researchers, small-business owners, and
+anyone else with an idea who wants to complete one bounded task with Codex
+without first becoming a software engineer. The same method also works with
+Claude and similar file-and-tool agents.
 
-This guide is for writers, creators, researchers, small-business owners, and
-anyone else with an idea who wants to build with Codex without first becoming
-a software engineer.
-
-Use it to turn an idea into a clear project, let Codex handle the approved
-technical work, and verify the finished result without reading every line of
-code. The same approach also works with Claude and similar file-and-tool
-agents.
-
-You remain responsible for the destination and the important decisions. The
-agent is responsible for doing the work inside those boundaries and leaving a
-result you can review.
+Use it to turn an idea into a clear project, let the agent do the approved work,
+and review the finished result in plain language. You remain responsible for
+the destination and important decisions; the agent is responsible for working
+inside those boundaries and showing what it did.
 
 To follow the runnable steps, you need Codex or a similar file-and-tool agent
 and a local project folder it may read. If you only want to learn the method,
@@ -46,6 +34,10 @@ information you need from me. Do not change anything yet.
 Codex should return a short current-state explanation, a draft Project Card,
 and only the questions that genuinely require your judgment. Review those
 decisions before authorizing any changes.
+
+This first request is deliberately read-only. It lets you check the agent's
+understanding and the proposed boundary before deciding whether any change
+should happen.
 
 ## The Basic Routine
 
@@ -93,43 +85,6 @@ what it can, then bring you the gaps and decisions that genuinely need a human.
 See the filled examples for a [writing revision](examples/writing-revision.md)
 and a [preserve-first inbox cleanup](examples/inbox-cleanup.md).
 
-## Build a Recurring-Work Assistant
-
-Once one project is working well, you may want Codex to help with a recurring
-body of work: weekly research, programme coordination, content planning, or
-another job that needs continuity across sessions.
-
-Start with [Build a Working Assistant with Codex](guides/BUILD_A_RECURRING_WORK_SYSTEM.md).
-It distils 27 lessons from a long-running private Chief-of-Staff build into a
-small operating pattern: trusted sources, durable state outside chat, bounded
-authority, useful feedback, low-noise attention, and evidence of completion.
-
-Use the [copyable recurring-work workspace](templates/recurring-workspace/README.md)
-to prove one workflow before adding databases, broad connector access,
-background automation, or a custom application. The
-[weekly community brief](examples/weekly-community-brief.md) shows the pattern
-with entirely synthetic information.
-
-### Download The Starter
-
-[Create a private Reliable AI Work Starter](https://github.com/new?template_owner=TheDarkniteFalls&template_name=reliable-ai-work-starter&visibility=private),
-open the new repository in Codex, and paste the setup prompt from its
-`README.md`. The copy is private by default and includes the working agreement,
-source shelf, current-state handoff, review log, output boundary, and a small
-structural check.
-
-If you prefer an offline folder, [download the minimum recurring-work
-workspace](downloads/minimum-recurring-workspace.zip?raw=1) instead. Its
-published [SHA-256 checksum](downloads/minimum-recurring-workspace.sha256) and
-automated clean-folder check are rebuilt from the same source templates.
-
-The check proves that the committed download matches those templates, extracts
-cleanly into one folder, contains the required agreement and handoff surfaces,
-and avoids the repository's known private-data markers. It does **not** run
-Codex, inspect your sources, enforce authority, or prove that the starter will
-improve every workflow. The real first-use proof is one bounded task completed
-in a fresh session.
-
 ## How Much Can the Agent Do?
 
 Give the agent more freedom one step at a time. Treat each step as a separate
@@ -175,7 +130,50 @@ End substantial work with:
 Chat history can be useful background, but it is not a reliable project record.
 Save important state in the project's chosen source of truth.
 
-## Let the Project Learn
+## Go Further
+
+Complete one bounded task before expanding the system. The sections below are
+for recurring work, evidence-backed learning, and optional public-safe
+first-use feedback after the basic routine is clear.
+
+### Build a Recurring-Work Assistant
+
+Once one project is working well, you may want Codex to help with a recurring
+body of work: weekly research, programme coordination, content planning, or
+another job that needs continuity across sessions.
+
+Start with [Build a Working Assistant with Codex](guides/BUILD_A_RECURRING_WORK_SYSTEM.md).
+It distils 27 lessons from a long-running private Chief-of-Staff build into a
+small operating pattern: trusted sources, durable state outside chat, bounded
+authority, useful feedback, low-noise attention, and evidence of completion.
+
+Use the [copyable recurring-work workspace](templates/recurring-workspace/README.md)
+to prove one workflow before adding databases, broad connector access,
+background automation, or a custom application. The
+[weekly community brief](examples/weekly-community-brief.md) shows the pattern
+with entirely synthetic information.
+
+#### Download The Starter
+
+[Create a private Reliable AI Work Starter](https://github.com/new?template_owner=TheDarkniteFalls&template_name=reliable-ai-work-starter&visibility=private),
+open the new repository in Codex, and paste the setup prompt from its
+`README.md`. The copy is private by default and includes the working agreement,
+source shelf, current-state handoff, review log, output boundary, and a small
+structural check.
+
+If you prefer an offline folder, [download the minimum recurring-work
+workspace](downloads/minimum-recurring-workspace.zip?raw=1) instead. Its
+published [SHA-256 checksum](downloads/minimum-recurring-workspace.sha256) and
+automated clean-folder check are rebuilt from the same source templates.
+
+The check proves that the committed download matches those templates, extracts
+cleanly into one folder, contains the required agreement and handoff surfaces,
+and avoids the repository's known private-data markers. It does **not** run
+Codex, inspect your sources, enforce authority, or prove that the starter will
+improve every workflow. The real first-use proof is one bounded task completed
+in a fresh session.
+
+### Let the Project Learn
 
 After meaningful work, let the agent suggest one lesson that could make a
 future task easier or safer. The user does not need to study the logs or design
@@ -204,7 +202,7 @@ The agent records the lesson, its evidence, where it was saved, and how to
 check it next time. The project improves only when a later result shows that
 the lesson was useful.
 
-## Help Test The First Use
+### Help Test The First Use
 
 The next useful evidence is outside use, not another feature. Follow the
 [30-to-60-minute first-use trial](docs/FIRST_USE_TRIAL.md), then submit a
@@ -217,6 +215,30 @@ are not a representative study.
 Never put private sources, identifying details, credentials, internal links,
 connector exports, raw model logs, customer data, or unpublished material in a
 public issue.
+
+## Trust and Limits
+
+The automated checks cover the published starter bundle, not the quality or
+safety of a live project:
+
+[![checks](https://github.com/TheDarkniteFalls/agent-operator-handbook/actions/workflows/checks.yml/badge.svg)](https://github.com/TheDarkniteFalls/agent-operator-handbook/actions/workflows/checks.yml)
+
+<!-- toolkit-trust-card:start -->
+> **Public contract:** Stable guide · about 5 min · No code; Python optional · no model · no network
+>
+> **Operation:** Guidance only
+>
+> **A pass establishes:** The starter bundle contains the declared source, authority, review, and handoff files and passes its structural checks.
+>
+> **It does not establish:** Guidance and templates do not enforce permissions or verify a live project.
+>
+> **First check:** `python3 scripts/check_starter_bundle.py`
+<!-- toolkit-trust-card:end -->
+
+Outside-use evidence is recorded separately in the starter's
+[usage-evidence ledger](https://github.com/TheDarkniteFalls/reliable-ai-work-starter/blob/main/USAGE_EVIDENCE.md).
+Passing structural checks is not evidence that the method works for every
+workflow.
 
 ## Repository Checks
 
