@@ -1,5 +1,17 @@
 # Build with Codex: A Plain-English Handbook
 
+<!-- toolkit-trust-card:start -->
+> **Public contract:** Stable guide · about 5 min · No code; Python optional · no model · no network
+>
+> **Operation:** Guidance only
+>
+> **A pass establishes:** The starter bundle contains the declared source, authority, review, and handoff files and passes its structural checks.
+>
+> **It does not establish:** Guidance and templates do not enforce permissions or verify a live project.
+>
+> **First check:** `python3 scripts/check_starter_bundle.py`
+<!-- toolkit-trust-card:end -->
+
 Codex can help turn project material and ordinary-language instructions into
 finished work even if you do not code. The harder part is telling it which
 material to trust, what result you want, what it may change, and what evidence
@@ -222,18 +234,6 @@ The automated checks cover the published starter bundle, not the quality or
 safety of a live project:
 
 [![checks](https://github.com/TheDarkniteFalls/agent-operator-handbook/actions/workflows/checks.yml/badge.svg)](https://github.com/TheDarkniteFalls/agent-operator-handbook/actions/workflows/checks.yml)
-
-<!-- toolkit-trust-card:start -->
-> **Public contract:** Stable guide · about 5 min · No code; Python optional · no model · no network
->
-> **Operation:** Guidance only
->
-> **A pass establishes:** The starter bundle contains the declared source, authority, review, and handoff files and passes its structural checks.
->
-> **It does not establish:** Guidance and templates do not enforce permissions or verify a live project.
->
-> **First check:** `python3 scripts/check_starter_bundle.py`
-<!-- toolkit-trust-card:end -->
 
 Outside-use evidence is recorded separately in the starter's
 [usage-evidence ledger](https://github.com/TheDarkniteFalls/reliable-ai-work-starter/blob/main/USAGE_EVIDENCE.md).
