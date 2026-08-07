@@ -1,9 +1,9 @@
-# First-Use Trial
+# Optional First-Use Trial
 
-The minimum recurring-work starter should earn more machinery only after it
-helps real people complete real work. This short trial is designed to find
-hidden assumptions and confusing steps without collecting private source
-material.
+This optional trial checks whether the minimum recurring-work starter can help
+with one bounded job without hidden state or unnecessary machinery. It is
+designed to find assumptions and confusing steps without collecting private
+source material or setting a participation target.
 
 ## Who This Is For
 
@@ -15,6 +15,10 @@ work in ordinary language but do not want to become software engineers first.
 
 - Choose one recurring job that matters and can be attempted in 30 to 60
   minutes.
+- Record the exact folder, repository, version, or other starting point you
+  will use, plus any existing work that must stay untouched.
+- Agree which local files, commands, model or service calls, network access,
+  and external actions are expected. Treat everything else as a stop signal.
 - Keep real source material in your own local workspace.
 - Do not paste private messages, credentials, personal records, customer data,
   internal links, connector exports, or raw model logs into a public issue.
@@ -33,15 +37,15 @@ work in ordinary language but do not want to become software engineers first.
 3. Paste the setup prompt from the starter `README.md`.
 4. Answer no more than the three requested questions.
 5. Run one bounded workflow through to a saved output.
-6. Check whether the result names its sources, uncertainty, validation, next
-   action, and owner.
+6. Check whether the result identifies its final state, sources, uncertainty,
+   validation, next action, and owner.
 7. Record whether you used, edited, rejected, or could not complete the result.
 
 ## What To Report
 
-Use the starter's [First-use report issue
-form](https://github.com/TheDarkniteFalls/reliable-ai-work-starter/issues/new?template=first-use-report.yml)
-and share only public-safe information:
+If you want to share feedback, use the starter's optional [First-use report
+issue form](https://github.com/TheDarkniteFalls/reliable-ai-work-starter/issues/new?template=first-use-report.yml)
+and include only public-safe information:
 
 - the general kind of work attempted;
 - whether the first useful result was completed;
@@ -50,18 +54,21 @@ and share only public-safe information:
 - any boundary or proof that made the result easier to trust; and
 - the smallest change that would improve another person's first run.
 
-The issue form is a feedback surface, not evidence that the starter works for
-everyone. Three completed trials are enough to choose the next correction;
-they are not a representative study or a reason to automate the workflow.
+The issue form is a voluntary feedback surface, not evidence that the starter
+works for everyone. A report can support only the smallest correction it
+directly justifies. Other changes should be labelled as maintainer judgement,
+not user evidence.
 
 ## Success And Stop Rules
 
 A trial succeeds when a fresh session can complete one useful workflow from the
 starter files and deliberately supplied sources alone. Stop and report the gap
-if the workflow needs hidden state, an unexplained capability, broad connector
-access, an unsafe external action, or more setup than the expected result is
-worth.
+if the starting point differs, protected work changes, an unexpected tool or
+service changes something, required evidence is unavailable, or the workflow
+needs hidden state, unexplained capability, broad connector access, an unsafe
+external action, or more setup than the expected result is worth.
 
-After three public-safe reports, summarize the recurring friction, implement
-the smallest supported correction, and rerun the clean-folder check before
-adding features.
+Do not retry with broader access or take the next external step merely to make
+the trial pass. If a voluntary public-safe report supports a correction, make
+the smallest supported change and rerun the clean-folder check before adding
+features.

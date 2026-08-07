@@ -11,8 +11,11 @@ its results.
 
 ## Current Scope
 
+- **Exact target:** [Folder, repository, branch, document, service, or shared record]
+- **Starting checkpoint:** [Commit, version, timestamp, or other exact current state]
 - **In scope:** [The first bounded workflow]
 - **Out of scope:** [Useful work deliberately deferred]
+- **Protected starting state:** [Items that must stay unchanged, private, or unpublished]
 - **Review this agreement after:** [Date, number of runs, or material change]
 
 ## Source Order
@@ -29,13 +32,24 @@ retrieval hints separate from proven facts or relationships.
 
 - **May read:** [Named files, folders, or systems]
 - **May propose:** [Drafts, plans, classifications, or changes]
+- **May run:** [Named commands, tools, model or service calls, and network reads]
+- **Expected side effects:** [Local files, temporary files, network access, connected services, or none]
 - **May change after approval:** [Exact local items or boundaries]
 - **Must not change:** [Protected areas or records]
-- **Must ask before:** Sending, publishing, purchasing, deleting, deploying,
-  or changing shared state.
+- **Fresh approval required before:** Staging, committing, pushing, sending,
+  publishing, purchasing, deleting, deploying, or changing shared state.
 
 Approval applies only to the agreed target, scope, and content. Ask again if
-any of those change.
+any of those change. Each fresh approval gate is separate.
+
+## Stop Conditions
+
+Stop and report if the target or checkpoint differs, protected or unrelated
+state changes, an unexpected side effect appears, evidence conflicts or is
+unavailable, a required check cannot run or still fails after the authorized
+work, or resolving a failure or completing the task needs broader scope or
+authority or risks protected state. Do not silently retry with more access,
+repair unrelated work, or take the next external step.
 
 ## Context Rules
 
@@ -49,11 +63,16 @@ any of those change.
 Every material output should include:
 
 - intended use;
+- exact final version, revision, record, or as-of time;
 - sources and their as-of dates;
 - important assumptions or uncertainty;
 - the result;
-- validation performed;
+- validation performed and whether each check passed, failed, was not run, was
+  blocked, or lacked evidence;
+- expected and unexpected side effects;
 - next action and owner;
+- for an external action, the canonical record, live-confirmed state and time
+  or an explicit unverified status, and due or follow-up date;
 - review, replacement, or retirement condition when useful.
 
 Surface only decisions, approvals, ambiguity, material risk, and useful review
@@ -64,12 +83,20 @@ work. Store routine evidence quietly.
 A task is complete only when:
 
 - the requested result exists in its declared location;
+- the exact final checkpoint is recorded;
+- authorized scope and protected state were checked;
 - the smallest meaningful validation passed after the final change;
 - the result was checked against the request and named sources;
+- the real document, app, browser journey, or live record was inspected when
+  that is part of the promised result;
 - unrelated items were left untouched;
 - skipped checks and remaining uncertainty are visible;
-- no external action is implied unless it actually occurred;
-- the next action and owner are named.
+- any external action required for completion is live-confirmed at its
+  canonical record;
+- any action that cannot be confirmed is explicitly marked unverified and
+  keeps the task open;
+- human usefulness is not claimed without human evidence; and
+- the next action, owner, and any follow-up date are named.
 
 ## Learning Rule
 

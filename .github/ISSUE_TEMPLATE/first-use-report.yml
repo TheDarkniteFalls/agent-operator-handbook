@@ -1,11 +1,11 @@
 name: First-use report
-description: Share a public-safe result from trying the recurring-work starter.
+description: Share optional public-safe feedback from trying the recurring-work starter.
 title: "[First use]: "
 body:
   - type: markdown
     attributes:
       value: |
-        Thank you for trying the starter. GitHub issues are public. Do not include private messages, credentials, personal records, customer data, internal links, connector exports, raw model logs, or unpublished material. Generalize or replace sensitive details with synthetic examples.
+        This report is voluntary and there is no participation target. Thank you for trying the starter. GitHub issues are public. Do not include private messages, credentials, personal records, customer data, internal links, connector exports, raw model logs, or unpublished material. Generalize or replace sensitive details with synthetic examples.
   - type: dropdown
     id: perspective
     attributes:

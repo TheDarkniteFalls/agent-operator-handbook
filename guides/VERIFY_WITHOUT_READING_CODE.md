@@ -12,7 +12,8 @@ and choose the final review state.
 Ask the agent to identify:
 
 - the current source of truth
-- the state before its work
+- the exact folder, repository, branch, version, record, or as-of time
+- the state before its work and the final checkpoint being reviewed
 - existing or unrelated changes
 - missing, stale, or conflicting information
 
@@ -37,7 +38,27 @@ A useful check has a clear question, such as:
 
 Ask when the check ran. Evidence recorded before the final change may be stale.
 
-## 4. Inspect the Result That Matters
+## 4. Use The Proof Ladder
+
+Different evidence answers different questions. Check only the layers that
+matter to the task, but do not let proof at one layer stand in for another.
+
+| Layer | Question | Useful evidence |
+| --- | --- | --- |
+| Exact version | Which exact final version is under review? | Commit, version, file digest, record ID, or as-of time |
+| Change boundary | Did only the authorized items change? | Complete comparison plus protected and unrelated items checked |
+| Structural checks | Does the result have the required shape or pass its named checks? | Format check, test, build, schema validation, or clean extraction |
+| Real-world result | Does the real document, app, browser journey, or remote record work now? | Opened document, exercised controls, rendered screen, or live-read canonical record |
+| Human usefulness | Is the result suitable for its intended person and purpose? | Human use, acceptance, edit, rejection, or recorded judgement |
+
+A structural pass does not prove that the real-world result works. A working
+result does not prove that a person found it useful. After any material change,
+identify which earlier evidence became stale and rerun the relevant checks.
+
+Record each check as `passed`, `failed`, `not run`, `blocked`, or `missing
+evidence`. Do not turn a blocked or missing result into a pass.
+
+## 5. Inspect the Result That Matters
 
 Where possible, review the real output:
 
@@ -50,7 +71,12 @@ Where possible, review the real output:
 A technical check can support this review, but it should not replace the
 user-visible result.
 
-## 5. Ask What the Evidence Does Not Prove
+For an external action, inspect the canonical URL or record after the action.
+Record its live state, when it was confirmed, who owns the next move, and any
+due or follow-up date. A successful tool or connector response is not proof
+that the intended external state now exists.
+
+## 6. Ask What the Evidence Does Not Prove
 
 Every check has limits. Ask the agent to state them plainly.
 
@@ -60,6 +86,7 @@ Every check has limits. Ask the agent to state them plainly.
 | "The checks passed" | Exact check, timing, and result | Whether the check covered the right risks |
 | "Nothing else changed" | Complete changed-item list or comparison | Changes outside the inspected boundary |
 | "The information is current" | Source and as-of date | Later changes or missing sources |
+| "The external action completed" | Canonical record, live state, and confirmation time | Later changes or obligations still awaiting follow-up |
 | "It is safe to publish" | Privacy review, final content review, and human approval | Unknown sensitive context or legal obligations |
 
 ## A Copyable Review Request
@@ -67,16 +94,14 @@ Every check has limits. Ask the agent to state them plainly.
 ```text
 Before I accept this work, give me a plain-language review packet:
 
-1. Restate the result you were authorized to produce.
-2. Name the source of truth and the state you started from.
-3. List every item changed and any unexpected item encountered.
-4. Map each definition-of-done item to current evidence.
-5. State which checks ran after the final change and show their outcomes.
-6. Explain what those checks do not prove.
-7. List skipped checks, remaining risks, and unresolved decisions.
-8. Confirm whether anything was sent, published, deleted, purchased, or changed outside the approved local scope.
-9. Name the next owner and one concrete next action.
-10. If the evidence supports a reusable lesson, propose one, say where it should be saved, and explain how we can test it next time. Do not change project instructions without approval.
+1. Restate the authorized result and name the source of truth, starting checkpoint, and final checkpoint.
+2. List every changed item, every protected item checked, and any unexpected side effect.
+3. Map each definition-of-done item to the relevant proof layers: Exact version, Change boundary, Structural checks, Real-world result, and Human usefulness.
+4. Give the final check outcomes, mark each one passed, failed, not run, blocked, or missing evidence, and explain its limits or stale evidence.
+5. List remaining risks and unresolved decisions.
+6. For any external action, give the canonical record, live-confirmed state and confirmation time or explicitly unverified status, and follow-up date.
+7. Name the next owner, one concrete next action, and its date.
+8. Optionally propose one reusable lesson, where it should be saved, and how to test it next time. Do not change project instructions without approval.
 ```
 
 ## Choose the Review Result

@@ -37,10 +37,12 @@ Open Codex in the folder that contains your project material and paste:
 
 ```text
 I do not code, but I have a project idea. Read the material in this project and
-explain what already exists in plain language. Then draft an Agent Project Card
-covering the finished result, reliable source material, what must stay
-protected, actions that require my approval, and any decisions or missing
-information you need from me. Do not change anything yet.
+explain what already exists in plain language. Name the exact folder,
+repository, branch, version, or shared record you inspected, plus any work
+already in progress. Then draft an Agent Project Card covering the finished
+result, reliable source material, what must stay protected, expected side
+effects, actions that require my approval, stop conditions, and any decisions
+or missing information you need from me. Do not change anything yet.
 ```
 
 Codex should return a short current-state explanation, a draft Project Card,
@@ -63,20 +65,21 @@ you.
 
 The basic routine is:
 
-1. **Show it the right material.** Name the files, pages, messages, or records
-   that describe the project now. Ask the agent to flag anything missing or
-   contradictory.
+1. **Show it the right material.** Name the exact folder, repository, version,
+   page, message, or record that describes the project now. Ask the agent to
+   flag anything missing, stale, contradictory, or already in progress.
 2. **Describe the finished result.** Explain in ordinary language what you want
    to be true when the work is done. The agent can work out the detailed steps.
-3. **Set a few stop signs.** Say what it must not change and when it must ask
-   you first, especially before sending, publishing, deleting, purchasing, or
-   changing shared information.
+3. **Set a few stop signs.** Say which files, tools, online services, or shared
+   information it expects to use or change; what must stay protected; and when
+   it must stop and ask you first. Sending, publishing, deleting, purchasing,
+   and changing shared information always need a fresh decision.
 4. **Let it do the work.** Give it room to investigate, make the approved local
    changes, and choose sensible checks. Ask it to explain important decisions
    in plain language.
-5. **Make it show its work at the end.** The agent should show the result, what
-   changed, what it checked, what remains uncertain, and what should happen
-   next.
+5. **Make it show its work at the end.** The agent should identify the exact
+   final state, show the result, list what changed, explain what each check
+   proves, and say what remains uncertain and what should happen next.
 
 ## Start with a Project Card
 
@@ -113,31 +116,52 @@ decision:
 Approval at one step does not automatically approve the next. If the target,
 scope, or proposed content changes, the agent should ask again.
 
+Before approving a change, ask the agent to list the side effects it expects:
+local files, commands, additional model or service calls, network access,
+connected accounts, and changes outside the local project. Treat each fresh
+gate as a separate choice. Approval to edit does not approve staging or
+committing; a commit does not approve pushing; and a push does not approve a
+pull request, publication, message, or deployment.
+
+If the starting state differs, a protected item changes, an unexpected side
+effect appears, or required evidence is unavailable, the agent should stop and
+report the difference. It should not solve the problem by silently expanding
+scope, retrying with more authority, or taking the next external step.
+
 ## What Good Evidence Looks Like
 
 Useful evidence is tied to the promised result:
 
-- a before-and-after comparison
-- the exact items changed
-- a named check run after the final change
-- a visible result in the document, app, or service that matters
+- the exact final version, revision, or as-of time
+- a before-and-after comparison and the exact items changed
+- proof that protected and unrelated items stayed untouched
+- a named structural or automated check run after the final change
+- the visible result in the document, app, browser, or live service that matters
+- human review of whether the result is actually useful, when that claim matters
 - skipped checks and remaining uncertainty
 - a statement of what each check does not prove
 
 "Done," "looks good," and "tests passed" are claims. Evidence lets a person
-decide whether to trust those claims.
+decide whether to trust those claims. A structural check does not prove a live
+journey worked, and a working journey does not prove that a person found the
+result useful. See [Verify Without Reading
+Code](guides/VERIFY_WITHOUT_READING_CODE.md) for the full proof ladder.
 
 ## The Required Handoff
 
 End substantial work with:
 
 - the result achieved
+- the exact final version, revision, or as-of time
 - the items changed
+- expected and unexpected side effects
 - the checks performed and their outcomes
 - anything failed, skipped, or not independently verified
 - remaining risk or unresolved decisions
-- whether any external action occurred
-- the next owner and one concrete next action
+- whether any external action occurred and, if so, its canonical link or record,
+  live-confirmed state and confirmation time, or an explicit note that it
+  remains unverified
+- the next owner, one concrete next action, and any due or follow-up date
 
 Chat history can be useful background, but it is not a reliable project record.
 Save important state in the project's chosen source of truth.
@@ -216,13 +240,16 @@ the lesson was useful.
 
 ### Help Test The First Use
 
-The next useful evidence is outside use, not another feature. Follow the
-[30-to-60-minute first-use trial](docs/FIRST_USE_TRIAL.md), then submit a
-[public-safe first-use report](https://github.com/TheDarkniteFalls/reliable-ai-work-starter/issues/new?template=first-use-report.yml).
-Accepted reports are summarized in the starter's
+If you choose to try the starter, follow the optional
+[30-to-60-minute first-use trial](docs/FIRST_USE_TRIAL.md). You may then submit
+a [public-safe first-use report](https://github.com/TheDarkniteFalls/reliable-ai-work-starter/issues/new?template=first-use-report.yml).
+Voluntary reports are summarized in the starter's
 [usage-evidence ledger](https://github.com/TheDarkniteFalls/reliable-ai-work-starter/blob/main/USAGE_EVIDENCE.md).
-Three completed reports are enough to choose the next small correction; they
-are not a representative study.
+
+There is no participation target. A report may support only the smallest
+correction it directly justifies; other changes should be labelled as
+maintainer judgement rather than user evidence. Reports do not establish broad
+adoption or effectiveness.
 
 Never put private sources, identifying details, credentials, internal links,
 connector exports, raw model logs, customer data, or unpublished material in a
