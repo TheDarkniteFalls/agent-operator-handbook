@@ -1,10 +1,10 @@
 # Minimum Recurring-Work Workspace
 
-This is a small, file-based starting point for one recurring workflow. Copy the
-whole `recurring-workspace` folder into a new workspace, then personalize it
-with Codex.
+Use this folder for one recurring job, such as a weekly brief. Copy the whole
+`recurring-workspace` folder into a new workspace, then give Codex the setup
+prompt below. It will ask about the job, its sources and what needs your approval.
 
-The files have different jobs:
+Here is where each part of the work goes:
 
 - `WORKING_AGREEMENT.md` defines purpose, sources, authority, output rules, and
   completion proof.
@@ -53,8 +53,9 @@ Before adding more machinery:
 6. Write down any missing file, hidden assumption, confusing term, or required
    capability.
 
-The starter passes when a fresh session can complete the first workflow from
-these files alone. A polished folder structure is not proof.
+You have checked the first use when a fresh session completes the workflow
+from these files and the sources you deliberately supply. Inspect the saved
+result before deciding whether to use it.
 
 ## Public-Safe Use
 

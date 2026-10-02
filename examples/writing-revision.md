@@ -1,7 +1,8 @@
-# Example: A Bounded Writing Revision
+# Example: Revising a Novel Outline
 
-This synthetic example shows how a non-coder can use an agent to revise a novel
-outline without giving it authority over the manuscript or established canon.
+In this made-up example, an author wants to move a confrontation earlier in a
+novel outline. The agent may revise the outline after approval, while the
+manuscript and established story facts stay protected.
 
 ## Project Card
 
