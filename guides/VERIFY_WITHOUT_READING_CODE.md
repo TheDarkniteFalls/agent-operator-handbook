@@ -1,11 +1,12 @@
 # Verify Agent Work Without Reading Code
 
-You do not need to understand every internal detail to review agent work. You
-do need evidence connected to the result you requested.
+Start by opening the result. Does the document say what you asked for? Does the
+page work? Are the files you wanted protected still untouched? This guide
+helps you ask for checks you can understand without reading the code.
 
 Give this guide to the agent after it finishes the task and ask it to assemble
-the review packet. Your job is to inspect the result, question weak evidence,
-and choose the final review state.
+a short review note. Use it to inspect the result, question weak evidence,
+and decide whether the work is ready to use.
 
 ## 1. Confirm the Starting Point
 
@@ -38,10 +39,10 @@ A useful check has a clear question, such as:
 
 Ask when the check ran. Evidence recorded before the final change may be stale.
 
-## 4. Use The Proof Ladder
+## 4. Match Each Check to a Question
 
-Different evidence answers different questions. Check only the layers that
-matter to the task, but do not let proof at one layer stand in for another.
+Different evidence answers different questions. Use only the checks that
+matter to your task, and be clear about which question each one answers.
 
 | Layer | Question | Useful evidence |
 | --- | --- | --- |
@@ -66,7 +67,7 @@ Where possible, review the real output:
 - view the relevant page or screen
 - compare before and after
 - inspect a small sample of changed and protected items
-- ask the agent to point to the evidence for each acceptance criterion
+- ask the agent to show how it checked each requirement
 
 A technical check can support this review, but it should not replace the
 user-visible result.
@@ -104,7 +105,7 @@ Before I accept this work, give me a plain-language review packet:
 8. Optionally propose one reusable lesson, where it should be saved, and how to test it next time. Do not change project instructions without approval.
 ```
 
-## Choose the Review Result
+## Decide Whether to Use the Result
 
 Finish with one of these states:
 
@@ -115,5 +116,5 @@ Finish with one of these states:
 "Not verified" is a useful result. It prevents uncertainty from being hidden
 behind a confident summary.
 
-Only propose a learning after the work has been verified. A learning candidate
-is an idea to test in future work, not proof that the project has improved.
+Once the work is verified, you can propose a lesson for the next task.
+Check whether it helps when you use it; the proposal alone does not show improvement.

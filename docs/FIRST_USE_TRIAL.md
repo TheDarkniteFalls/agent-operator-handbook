@@ -1,9 +1,9 @@
 # Optional First-Use Trial
 
-This optional trial checks whether the minimum recurring-work starter can help
-with one bounded job without hidden state or unnecessary machinery. It is
-designed to find assumptions and confusing steps without collecting private
-source material or setting a participation target.
+Set aside 30 to 60 minutes to try one recurring job with the starter. Save the
+result and note the first confusing step, missing file or unexpected setup
+requirement. You can keep the whole trial private; sharing feedback is optional
+and there is no participation target.
 
 ## Who This Is For
 
@@ -59,7 +59,7 @@ works for everyone. A report can support only the smallest correction it
 directly justifies. Other changes should be labelled as maintainer judgement,
 not user evidence.
 
-## Success And Stop Rules
+## What the Trial Tells You
 
 A trial succeeds when a fresh session can complete one useful workflow from the
 starter files and deliberately supplied sources alone. Stop and report the gap

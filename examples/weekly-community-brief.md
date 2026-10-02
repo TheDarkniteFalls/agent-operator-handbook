@@ -1,8 +1,8 @@
 # Example: A Weekly Community Brief
 
-This entirely synthetic example shows how the minimum assistant workspace can
-support one recurring job without an app, database, automation, or broad
-connector access.
+Follow a volunteer coordinator preparing a weekly brief from three local
+files. All the people, events and results here are made up. The example shows
+what to save, what to check, and how to record a correction for next time.
 
 ## The Job
 
@@ -100,11 +100,11 @@ The feedback closes the output and creates one bounded lesson. It does not
 store the whole conversation, rewrite every writing rule, or create another
 pending review card.
 
-## What This Example Proves
+## What This Example Shows
 
-- The workflow can produce a useful saved result from a narrow source set.
+- The example lays out a saved result using a small set of named sources.
 - A missing confirmation remains unknown rather than becoming a false claim.
-- The assistant can distinguish useful output from circulation readiness.
+- The draft can be useful while still needing review before circulation.
 - Human feedback updates both the matching output state and a testable writing
   lesson.
 - External action remains separately approval-gated.

@@ -1,35 +1,16 @@
 # Build with Codex: A Plain-English Handbook
 
-<!-- toolkit-trust-card:start -->
-> **Public contract:** Stable guide · about 5 min · No code; Python optional · no model · no network
->
-> **Operation:** Guidance only
->
-> **A pass establishes:** The starter bundle contains the declared source, authority, review, and handoff files and passes its structural checks.
->
-> **It does not establish:** Guidance and templates do not enforce permissions or verify a live project.
->
-> **First check:** `python3 scripts/check_starter_bundle.py`
-<!-- toolkit-trust-card:end -->
+Have a document to revise, research to organise, or a small project to build?
+This handbook helps you give Codex a clear job and check what comes back.
+You do not need to read code to use the Project Card or review checklist.
 
-Codex can help turn project material and ordinary-language instructions into
-finished work even if you do not code. The harder part is telling it which
-material to trust, what result you want, what it may change, and what evidence
-must come back before you accept the work.
+Start with one task: choose the material the agent may read, describe the result
+you want, and say what it must leave alone. The prompt below asks for a plan
+you can review before anything changes.
 
-This handbook is for writers, creators, researchers, small-business owners, and
-anyone else with an idea who wants to complete one bounded task with Codex
-without first becoming a software engineer. The same method also works with
-Claude and similar file-and-tool agents.
-
-Use it to turn an idea into a clear project, let the agent do the approved work,
-and review the finished result in plain language. You remain responsible for
-the destination and important decisions; the agent is responsible for working
-inside those boundaries and showing what it did.
-
-To follow the runnable steps, you need Codex or a similar file-and-tool agent
-and a local project folder it may read. If you only want to learn the method,
-continue without running the prompts.
+To try it, you need Codex or a similar file-and-tool agent and a local folder
+it may read. You can also read the examples without running any prompts. These
+are instructions and templates; they do not enforce permissions for you.
 
 ## Start in 60 Seconds
 
@@ -46,17 +27,32 @@ or missing information you need from me. Do not change anything yet.
 ```
 
 Codex should return a short current-state explanation, a draft Project Card,
-and only the questions that genuinely require your judgment. Review those
+and the questions that require your judgment. Review those
 decisions before authorizing any changes.
 
 This first request is deliberately read-only. It lets you check the agent's
 understanding and the proposed boundary before deciding whether any change
 should happen.
 
+<!-- toolkit-trust-card:placement -->
+
+<!-- toolkit-trust-card:start -->
+> **Public contract:** Stable guide · about 5 min · No code; Python optional · no model · no network
+>
+> **Operation:** Guidance only
+>
+> **A pass establishes:** The starter bundle contains the declared source, authority, review, and handoff files and passes its structural checks.
+>
+> **It does not establish:** Guidance and templates do not enforce permissions or verify a live project.
+>
+> **First check:** `python3 scripts/check_starter_bundle.py`
+<!-- toolkit-trust-card:end -->
+
 ## The Basic Routine
 
-Most agent guides explain how to ask for work. This guide explains how to let
-an agent do most of that work without losing control of the project.
+For a writing revision, you might allow changes to the outline while keeping
+the manuscript untouched. For a weekly brief, you might allow a saved draft
+but require your approval before it is sent. Start with a boundary you can check.
 
 Think of the agent as a capable worker. You do not need to manage every step or
 choose every technical check. You give it a destination, show it where the
@@ -95,7 +91,7 @@ The basic routine is:
    from the real current state.
 
 The Project Card is not homework you must complete alone. Let the agent fill in
-what it can, then bring you the gaps and decisions that genuinely need a human.
+what it can, then bring you the gaps and decisions that need your attention.
 
 See the filled examples for a [writing revision](examples/writing-revision.md)
 and a [preserve-first inbox cleanup](examples/inbox-cleanup.md).
@@ -147,9 +143,10 @@ journey worked, and a working journey does not prove that a person found the
 result useful. See [Verify Without Reading
 Code](guides/VERIFY_WITHOUT_READING_CODE.md) for the full proof ladder.
 
-## The Required Handoff
+## Save a Short Handoff
 
-End substantial work with:
+A handoff is a note that lets you or a future session continue the work.
+Ask for:
 
 - the result achieved
 - the exact final version, revision, or as-of time
@@ -164,13 +161,13 @@ End substantial work with:
 - the next owner, one concrete next action, and any due or follow-up date
 
 Chat history can be useful background, but it is not a reliable project record.
-Save important state in the project's chosen source of truth.
+Save the current result and next step in the project file you have chosen to keep up to date.
 
 ## Go Further
 
-Complete one bounded task before expanding the system. The sections below are
-for recurring work, evidence-backed learning, and optional public-safe
-first-use feedback after the basic routine is clear.
+Finish one task with a clear scope before adding recurring work. The sections
+below help you repeat a useful workflow, record a lesson, or share optional
+feedback without exposing private material.
 
 ### Build a Recurring-Work Assistant
 
@@ -179,9 +176,9 @@ body of work: weekly research, programme coordination, content planning, or
 another job that needs continuity across sessions.
 
 Start with [Build a Working Assistant with Codex](guides/BUILD_A_RECURRING_WORK_SYSTEM.md).
-It distils 27 lessons from a long-running private Chief-of-Staff build into a
-small operating pattern: trusted sources, durable state outside chat, bounded
-authority, useful feedback, low-noise attention, and evidence of completion.
+It shares 27 lessons from a long-running private assistant build: choose
+reliable sources, save the current state outside chat, limit what the agent may
+do, and check whether you actually used the result.
 
 Use the [copyable recurring-work workspace](templates/recurring-workspace/README.md)
 to prove one workflow before adding databases, broad connector access,
@@ -255,7 +252,7 @@ Never put private sources, identifying details, credentials, internal links,
 connector exports, raw model logs, customer data, or unpublished material in a
 public issue.
 
-## Trust and Limits
+## What the Starter Check Shows
 
 The automated checks cover the published starter bundle, not the quality or
 safety of a live project:
@@ -291,8 +288,8 @@ This repository contains guidance and synthetic examples only. It does not call
 an AI model, inspect a project, enforce permissions, verify evidence, or approve
 work on anyone's behalf.
 
-The goal is not to remove human judgment. It is to make that judgment easier by
-keeping authority, evidence, uncertainty, and ownership visible.
+Use the checks to decide what you can accept, what still needs review, and who
+should take the next step.
 
 ## License
 

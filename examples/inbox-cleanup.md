@@ -1,7 +1,8 @@
 # Example: Preserve-First Inbox Cleanup
 
-This synthetic example shows how to use an agent for a bulk operation without
-turning a broad instruction into accidental deletion or lost correspondence.
+In this made-up example, a volunteer wants old event notices out of the inbox
+while keeping replies and receipts. Follow the search, preview and checks to
+see what the volunteer approves before anything is archived.
 
 ## Project Card
 
@@ -89,6 +90,6 @@ The operator checks:
 - **Check next time:** Confirm the protected-category sample is clean before a
   later bulk action, then record whether the rule prevented rework.
 
-The safe result is not the largest possible cleanup. It is the largest cleanup
-supported by the inspected evidence and the approved boundary. The next cleanup
+The cleanup covers only the messages supported by the inspected evidence and
+the exact approved rule. The next cleanup
 will decide whether to keep, revise, or retire the new exclusion rule.
